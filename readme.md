@@ -6,7 +6,4 @@ I intend to add further implementations such as multihead latent attention (MLA)
 # Simplified Transformer Blocks
 This paper suggests major prunings to the transformer architecture, resulting in fewer parameters while maintaining performance. Specifically,
 
-* Instead of three projections (Q,K,V), only two are used (Q,K). The scaled dot-product attention operation is performed without multiplying by V at the end:
-$$
-scores = QK
-$$
+* Instead of three projections (Q,K,V), only two are used (Q,K). The scaled dot-product attention operation is performed without multiplying by V at the end: $$\text{scores}=\text{softmax} \left( \frac{QK^T}{\sqrt{ d }}  \right)$$
