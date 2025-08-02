@@ -16,7 +16,7 @@ Where $\alpha,\beta$ and $\gamma$ are learned parameters, and $C$ is a *centerin
 
 Finally, the shaped attention operation and the MLP are not arranged *sequentially*, but rather in parallel:
 $$\text{output} = w_{\text{FF}}\text{MLP}(x)+ w_{A}\text{shaped attention}(x)$$
-Where $w_\text{FF},w_{\text{A}}$ are learnable weight for the feed-forward network and the shaped attention operations, respectively.
+Where $w_\text{FF},w_{\text{A}}$ are learnable weights for the feed-forward network and the shaped attention operation, respectively.
 
 ## One Wide Feed-forward
 
